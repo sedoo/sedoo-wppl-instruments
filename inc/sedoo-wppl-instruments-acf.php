@@ -1,0 +1,166 @@
+<?php 
+// FIELD FOR POST TYPE
+acf_add_local_field_group(array(
+	'key' => 'group_6076a625b2157',
+	'title' => 'Post type instruments fields',
+	'fields' => array(
+		array(
+			'key' => 'field_6076a63398215',
+			'label' => 'Contact',
+			'name' => 'contact',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array(
+			'key' => 'field_6076a65698216',
+			'label' => 'Mobilité',
+			'name' => 'mobilite',
+			'type' => 'radio',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+				'fixe' => 'Fixe',
+				'mobile' => 'Mobile',
+				'mobilisable' => 'Mobilisable',
+			),
+			'allow_custom' => 0,
+			'default_value' => array(
+				0 => 'fixe',
+			),
+			'layout' => 'vertical',
+			'toggle' => 0,
+			'return_format' => 'value',
+			'save_custom' => 0,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'sedoo_instruments',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+// FIELDS FOR THE BLOCK
+if( function_exists('acf_add_local_field_group') ):
+
+acf_add_local_field_group(array(
+	'key' => 'group_60780b803532f',
+	'title' => 'Bloc instrument',
+	'fields' => array(
+		array(
+			'key' => 'field_60780b8322c4a',
+			'label' => __( 'Types de mesures', 'sedoo-wppl-instruments' ),
+			'name' => 'sedoo_instruments_type_de_mesures',
+			'type' => 'taxonomy',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'taxonomy' => 'sedoo-type-demesures',
+			'field_type' => 'checkbox',
+			'add_term' => 1,
+			'save_terms' => 0,
+			'load_terms' => 0,
+			'return_format' => 'id',
+			'multiple' => 0,
+			'allow_null' => 0,
+		),
+		array(
+			'key' => 'field_60780bcb22c4b',
+			'label' => __( 'Thématique de recherche', 'sedoo-wppl-instruments' ),
+			'name' => 'sedoo_instruments_thematique_de_recherche',
+			'type' => 'taxonomy',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'taxonomy' => 'sedoo-theme-labo',
+			'field_type' => 'checkbox',
+			'add_term' => 0,
+			'save_terms' => 0,
+			'load_terms' => 0,
+			'return_format' => 'id',
+			'multiple' => 0,
+			'allow_null' => 0,
+		),
+		array(
+			'key' => 'field_60780be222c4c',
+			'label' => __( 'Plateforme', 'sedoo-wppl-instruments' ),
+			'name' => 'sedoo_instruments_plateforme',
+			'type' => 'taxonomy',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'taxonomy' => 'sedoo-platform-tag',
+			'field_type' => 'checkbox',
+			'add_term' => 0,
+			'save_terms' => 0,
+			'load_terms' => 0,
+			'return_format' => 'id',
+			'multiple' => 0,
+			'allow_null' => 0,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/sedoo-instruments-block',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+endif;

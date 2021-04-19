@@ -1,0 +1,192 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sedoo - Instruments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-19 12:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.1\n"
+"X-Domain: sedoo-wppl-instruments"
+
+#: inc/sedoo-wppl-instruments-post-type.php:15
+msgid "Add New"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:14
+msgid "Add New Item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:13
+msgid "All Items"
+msgstr ""
+
+#: template-parts/taxonomie-template.php:76
+#: template-parts/block/instrumentsblock.php:105
+msgid "Aucun instrument ne correspond."
+msgstr ""
+
+#: single-sedoo_instruments.php:56
+msgid "Contact"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:17
+msgid "Edit Item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:24
+msgid "Featured Image"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:32
+msgid "Filter items list"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/sedoo/sedoo-wppl-instruments"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.sedoo.fr"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:28
+msgid "Insert into item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:35
+#: template-parts/taxonomie-template.php:20
+#: template-parts/block/instrumentsblock.php:49
+msgid "Instrument"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:8
+#: inc/sedoo-wppl-instruments-post-type.php:9
+#: template-parts/taxonomie-template.php:6
+msgid "Instruments"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:10
+msgid "Item Archives"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:11
+msgid "Item Attributes"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:30
+msgid "Items list"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:31
+msgid "Items list navigation"
+msgstr ""
+
+#: single-sedoo_instruments.php:86 template-parts/taxonomie-template.php:24
+#: template-parts/block/instrumentsblock.php:53
+msgid "Mobilité"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:16
+msgid "New Item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:22
+msgid "Not found"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:23
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:12
+msgid "Parent Item:"
+msgstr ""
+
+#. Author of the plugin
+msgid "Pierre VERT & Nicolas Gruwe - SEDOO DATA CENTER"
+msgstr ""
+
+#: template-parts/taxonomie-template.php:21
+#: template-parts/block/instrumentsblock.php:50
+msgid "Plateforme"
+msgstr ""
+
+#: single-sedoo_instruments.php:62
+msgid "Plateformes"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin Instruments"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:6
+msgctxt "Post Type General Name"
+msgid "Instruments"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:7
+msgctxt "Post Type Singular Name"
+msgid "Instrument"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:26
+msgid "Remove featured image"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:21
+msgid "Search Item"
+msgstr ""
+
+#. Name of the plugin
+msgid "Sedoo - Instruments"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:25
+msgid "Set featured image"
+msgstr ""
+
+#: template-parts/taxonomie-template.php:22
+#: template-parts/block/instrumentsblock.php:51
+msgid "Thématique"
+msgstr ""
+
+#: single-sedoo_instruments.php:78
+msgid "Thématiques"
+msgstr ""
+
+#: template-parts/taxonomie-template.php:23
+#: template-parts/block/instrumentsblock.php:52
+msgid "Type de mesure"
+msgstr ""
+
+#: single-sedoo_instruments.php:70
+msgid "Types de mesures"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:18
+msgid "Update Item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:29
+msgid "Uploaded to this item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:27
+msgid "Use as featured image"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:19
+msgid "View Item"
+msgstr ""
+
+#: inc/sedoo-wppl-instruments-post-type.php:20
+msgid "View Items"
+msgstr ""

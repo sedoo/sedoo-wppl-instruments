@@ -1,0 +1,9 @@
+.instrument_table ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tbl_instru_heading {
+    background-color:var(--theme-color);
+    color: white;
+}
