@@ -30,12 +30,12 @@ if($blockfilter_platform != NULL) {
     <figure class="wp-block-table">
         <table class="instrument_table">
         <?php 
-        $isNotFirstTaxInLoop = 0;
+        $TableStartDisplayed = 0;
+        $FirstTimeInLoop = 1;
         foreach($blockfilter_platform as $platform) {
-            if($isNotFirstTaxInLoop == 1) {
-                array_pop($tax_query);
+            if($FirstTimeInLoop == 0) {
+                array_pop($tax_query); // remove the last tax query array (the previous platform tag)
             }
-
             $tax_query[] = array(
                 'taxonomy' => 'sedoo-platform-tag',
                 'field'    => 'id',
@@ -46,10 +46,11 @@ if($blockfilter_platform != NULL) {
                 'tax_query' => $tax_query,
                 'status'    => 'publish',
             );
+            $FirstTimeInLoop = 0;
             $query = new WP_Query( $args );
                 if ( $query->have_posts() ) {
                     ?>
-                        <?php if($isNotFirstTaxInLoop == 0) { ?>
+                        <?php if($TableStartDisplayed == 0) { ?>
                             <thead>
                                 <tr>
                                     <th><?php echo __( 'Instrument', 'sedoo-wppl-instruments' ); ?></th>
@@ -59,7 +60,7 @@ if($blockfilter_platform != NULL) {
                                 </tr>
                             </thead>
                             <tbody>
-                        <?php } $isNotFirstTaxInLoop = 1; ?>
+                        <?php $TableStartDisplayed = 1;  } ?>
                             <?php 
                             $platform = get_term( $platform, 'sedoo-platform-tag'  );
                             echo '<tr class="tbl_instru_heading"><td colspan="4">'.$platform->name.'</td></tr>';
@@ -97,9 +98,7 @@ if($blockfilter_platform != NULL) {
                             ?>
                         </tbody>
                     <?php 
-                } else {
-                    echo __( 'Aucun instrument ne correspond.', 'sedoo-wppl-instruments' );
-                }
+                } 
                 ?>
             <?php 
         }
