@@ -7,7 +7,7 @@
  * Author URI:      https://www.sedoo.fr 
  * Text Domain:     sedoo-wppl-instruments
  * Domain Path:     /languages
- * Version:         0.0.2
+ * Version:         0.0.3
  * GitHub Plugin URI: sedoo/sedoo-wppl-instruments
  * GitHub Branch:     master
  * @package         Sedoo_Wppl_Instruments
@@ -57,9 +57,6 @@ add_filter( 'single_template', 'sedoo_wppl_instrument_register_single_template' 
 
 
 // INSTRUMENTS ARCHIVE PAGE
-
-//////////////////////
-// alter the taxonomy pages
 add_filter ( 'archive_template', 'sedoo_wppl_instruments_change_archive_template' );
 function sedoo_wppl_instruments_change_archive_template($taxo_template) {
 
@@ -69,3 +66,9 @@ function sedoo_wppl_instruments_change_archive_template($taxo_template) {
 	}
     return $taxo_template;
 }
+
+// LOAD LANGUAGES FILES
+function sedoo_instruments_load_language() {
+    load_plugin_textdomain( 'sedoo-wppl-instruments', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'sedoo_instruments_load_language' );
