@@ -62,7 +62,7 @@ get_header();
                                     ?>
                                 </td>
                                 <td>
-                                    <?php echo get_field('field_6076a65698216', get_the_ID()); /* get mobility (not working with field name, dk why */?>       
+                                    <?php echo get_field('field_6076a65698216', get_the_ID()); /* get mobility (not working with field name, idk why */?>       
                                 </td>
                             </tr>
                             <?php 

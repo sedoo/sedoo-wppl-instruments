@@ -34,7 +34,7 @@ function sedoo_instruments_post_type() {
 	$args = array(
 		'label'                 => __( 'Instrument', 'sedoo-wppl-instruments' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' , 'revisions'),
+		'supports'              => array( 'title', 'editor', 'thumbnail' , 'excerpt', 'revisions'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
