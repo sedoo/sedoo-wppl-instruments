@@ -45,6 +45,9 @@ if($blockfilter_platform != NULL) {
                 'post_type' => 'sedoo_instruments',
                 'tax_query' => $tax_query,
                 'status'    => 'publish',
+                'order' => 'ASC',
+                'orderby' => 'title',
+                'posts_per_page' => '-1',
             );
             $FirstTimeInLoop = 0;
             $query = new WP_Query( $args );

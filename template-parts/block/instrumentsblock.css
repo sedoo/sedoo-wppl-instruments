@@ -3,6 +3,13 @@
     padding-left: 0;
 }
 
+.instrument_table li {    
+    margin-bottom: 0 !important;
+}
+.instrument_table td {
+    vertical-align:middle;
+}
+
 .tbl_instru_heading {
     background-color:var(--theme-color);
     color: white;
